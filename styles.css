@@ -6,6 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
+
 /* PEhle hamesha inspect karo, fri jaake check karo ki kaha problem aa rhi
 fir ape google chrome developer tools ka use karke game kardo, jo 
 bhi change kiya wo apni css file me bhi change kardo  */
@@ -64,15 +65,14 @@ h3{
 .c1{
     position: absolute;
     right: 400px;
-    
-    top: 80px;
+    top: 100px;
 }
 .c2{
     position: absolute;
-    left: 80px;
+    left: 250px;
 }
 .bottom-container{
-    background-color: rgb(72, 192, 152);
+    background-color: rgb(179, 207, 223);
     color: rgb(17, 78, 78);
     padding:30px;
     
@@ -80,7 +80,7 @@ h3{
 .footer-link{
     text-decoration: none;
     padding: 10px;
-    color: cornsilk;
+    color: rgb(19, 18, 14);
 }
 .calc{
     text-decoration: none;
@@ -88,7 +88,7 @@ h3{
     color: rgb(20, 177, 98);
 }
 a:hover{
-    color: rgb(138, 207, 204);
+    color: rgb(37, 28, 46);
 }
 .contact-me{
     padding: 30px;
@@ -116,20 +116,44 @@ hr{
 
 /* navbar */
 
-.navBar ul{
-    overflow: auto;
-}
-.navBar li{
-    float: left;
-    margin: 10px 10px;
-}
-.navBar li a{
-    padding: 3px;
-    text-decoration: none;
-    color: rgb(231, 240, 235);
-}
-.navBar li a:hover{
+
+span{
+    padding: 20px;
+    margin-top: 20px;
+    color: rgb(32, 54, 54);
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     
-    color: rgb(38, 224, 184);
 }
 
+.navBar span a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(21, 32, 32);
+}
+.navBar span a:hover{
+    
+    color: rgb(214, 228, 226);
+}
+
+/* responsive */
+@media  (max-width: 500px) {
+    span{
+        padding: 5px;
+        margin-top: 5px;
+        color: rgb(32, 54, 54);
+        font-family: 'Merriweather Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        
+    }
+    
+    .navBar span a{
+        padding: 3px;
+        text-decoration: none;
+        color: rgb(21, 32, 32);
+    }
+    .navBar span a:hover{
+        
+        color: rgb(214, 228, 226);
+    }
+}
