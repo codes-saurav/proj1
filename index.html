@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Photobucket to store a picture and get a url for it on the internet -->
+  <!-- favicon -> favourite icon
+    We can add it in our site  -->
+  <!-- go to favicon.cc , and create a favicon  -->
+  <!-- emojipedia.org is best foremoji photos  -->
+  <!-- .ico is the file extension for an icon  -->
+  <!-- use pesticide.io to debug your css, it is amazing -->
+  <!-- use colorhunt.io for choosing good colors for css-->
+  <!-- flaticon.com is amazing for icon pictures  -->
+  <!-- giphy.com for mast giphys  -->
+  <!-- whenever you want to make a inline element instead of block element
+    then you can use span instead of p -->
+  <!-- we can give width to block elements but not the span elements  -->
+  <!-- But if you want to make a width and make it inline then you should use
+    inline-block elements -->
+  <!-- we can change the width of the images and they are also inline 
+    so we can say that they are inline block(check google as well) -->
+  <!-- DIFFERENCE BETWEEN visibility:hidden; and display:none; -->
+  <!-- visibility and display both hide the element but visibilty : hidden, only
+    hides but the space is taken by the element but in display:none;
+    the space is also removed as if there was no code written for that element  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurav raj</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="soabicon.ico">
+  <!-- Let me talk a bot about the Display property
+    1) Block : You can change width but it takes the full line
+    2) Inline: It doesnt take the full line but we cant change width
+    3) Inline-block: When we dont want the element to occupy the whole line and also adjust its width
+    4) None: No display property -> The element disappears
+     for the element to take its place and get invisible we have the property of 
+     visibilty:hidden; it just hides the element from the user but the space is occupied
+   -->
+  <!-- We treat images as inline-block -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<!-- common inline elements
+1)span 2) images 3) anchor tag  -->
+
+<!-- CSS POSITIONING  -->
+<!-- children sit on the top of parents  -->
+<!-- 
+    <div>
+        <h1 >sau<span>rav</span></h1>
+    </div>
+
+    div ke upar h1, h1 ke upar aayega span
+ -->
+<!-- position is a property which has 4 different values
+ 1) relative -> to original position(relative to static)
+ 2) static  -> Default hota hai yahi 
+ 3)absolute ->relative to its parent(jis element ke andar ye wala element banaya hai)
+ 4) Fixed: It gets fixed on the web page -->
+
+<!-- when we want to remove an element out of the html flow then 
+ we use position:absolute; -->
+
+ <!-- Centering elements: When you have a width set for a block element the n you have to use margin auto else you just have to use text-align center..... -->
+
+<body>
+  
+  <div class="container">
+    <header style="background-color: rgb(72, 192, 152); margin: 0px;">
+      <nav class="navBar" style="margin-top: 0px;" >
+          <ul type="none">
+              <li><a href="https://www.youtube.com/channel/UCiQhMPGMvCbBSre4NbZTHIg" target="__blank">Home</a></li>
+              <li><a href="https://www.youtube.com/channel/UCiQhMPGMvCbBSre4NbZTHIg/playlists" target="__blank">Services</a></li>
+              <li><a href="https://www.youtube.com/channel/UCiQhMPGMvCbBSre4NbZTHIg/about" target="__blank">About</a></li>
+              <li><a href="https://linktr.ee/Sauravraj" target="__blank">Conctact us</a></li> 
+              
+          </ul>
+          
+      </nav>
+  </header>
+    <img class="c1" src="cloud.png" alt="Cloud image">
+    <h1 class="h11">I'm Saurav.</h1>
+    <p style="font-size: 2.5rem ; margin: 0px;">A student.</p>
+    <img class="c2" src="cloud.png" alt="Cloud image">
+    <img src="mountain.png" alt="Mountain image" width="300px" height="200px">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img src="saurav.png" alt="SAURAV RAJ " style="width: 100px; height: 100px; margin-top: 20px;">
+      <h2>Hello.</h2>
+      <p>My name is Saurav Raj and I am a Computer Science student. I love to code in Python and C++. I am learning Web Development nwadays</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2 style="padding: 20px;">My Skills.</h2>
+      <div class="skill-row">
+        <img class="" src="computer.png" alt="computer science" style="width: 25%; float: left; margin-right: 30px;">
+        <!-- whenever we float an element to left then the other text is wrapped around the right part i.e. the following portion of development is wrapped around the right part but ehat if we dont want some of the text to be wrapped around it then we use clear:left then it is not wrapped -->
+        <h3 style="font-size: 50px;">Development</h3>
+        <p>I havent done a lot in the field of development but I'm learning new technologies and working over projects and built new apps. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita corrupti dolore dolorem perferendis, mollitia quos velit nihil iste nostrum rem fugit optio recusandae quis distinctio esse id dolor, sed nesciunt architecto quasi necessitatibus quo. </p>
+      </div>
+      <div class="skill-row">
+        <img class="" src="desktop.png" alt="" style="width: 25%;
+         float:right; margin-right: 30px;">
+        <h3 style="font-size: 50px;">Courses</h3>
+        <p>I have made a course on C language on youtube and covered all the sections with the coding practice examples for better understanding and explained everything in detail</p>
+      </div>
+      <h2>Projects</h2>
+      <img class="" src="calculator.png" alt="calculator image" height="200px">
+      <h3>Making a scientific calculator</h3>
+      <p style="width: 70%; display: inline-block; text-align: center;" >We have made a <a href="https://www.youtube.com/watch?v=GAdOH9DNRXs&t=1645s" class="calc" target="__blank">scientific calculator</a> in the video and it has crossed over 2,300 views on youtube. There are many functions to be used in the calculator like addition, subtraction and various scientific operations like power, root etc</p>
+    </div>
+    <hr>
+    <div class="contact-me">
+      
+      <a href="mailto:sr35533@gmail.com" class="btn">CONTACT ME</a>
+    </div>
+  </div>
+
+  <div class="bottom-container">
+    <a href="https://www.youtube.com/channel/UCiQhMPGMvCbBSre4NbZTHIg" target="__blank" class="footer-link">YOUTUBE</a>
+    <a href="https://www.instagram.com/codes.soabism/" target="__blank" class="footer-link">INSTAGRAM</a>
+      <a href="https://www.instagram.com/saurav__15/" target="__blank" class="footer-link">Personal instagram</a>
+      <p class="copyright">© 2021 Saurav Raj  © <a href="https://www.youtube.com/channel/UCiQhMPGMvCbBSre4NbZTHIg" target="__blank" class="footer-link" style="padding: 0px; ">codes.soabism</a> </p>
+  </div>
+
+</body>
+
+</html>

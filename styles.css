@@ -1,0 +1,135 @@
+body{
+    margin: 0px; /*Doing this to remove the default space which comes*/
+    padding: 0px;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+/* PEhle hamesha inspect karo, fri jaake check karo ki kaha problem aa rhi
+fir ape google chrome developer tools ka use karke game kardo, jo 
+bhi change kiya wo apni css file me bhi change kardo  */
+h1 {
+    /* These things are done to remove the margin from the first div */
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    /* we are just overwriting the defaults of css  */
+    width: 50%; /*when we give width then the eleemt is centered within the 
+    width becUSE WE HAVE used the text-align center but if we want it
+    in the center of the wntire wenpage then we'll have to give 
+    margin auto*/
+    margin: auto;
+
+}
+.middle-container{
+    text-align: center;
+    
+}
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+    
+}
+.h11{
+    padding-top: 100px;
+    font-family: 'Sacramento', cursive;
+    font-size: 90px;
+    font-size: 7rem;
+    /* em is better than pixels because when we use pixe and 
+    someone has his fnt size: in the browser as large but still
+     the font size of our website will be the same we had in pixes
+     but if we use rem ->(root em) or em->(relative to parent) then it scales according
+     to the settings of the browser in which the website is opened */
+     /* rem is best to use */
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(101, 128, 216);
+}
+
+.container{
+    background-color: rgb(72, 192, 152);
+    color: rgb(17, 78, 78);
+    margin-top: 0px;
+}
+
+.c1{
+    position: absolute;
+    right: 400px;
+    
+    top: 80px;
+}
+.c2{
+    position: absolute;
+    left: 80px;
+}
+.bottom-container{
+    background-color: rgb(72, 192, 152);
+    color: rgb(17, 78, 78);
+    padding:30px;
+    
+}
+.footer-link{
+    text-decoration: none;
+    padding: 10px;
+    color: cornsilk;
+}
+.calc{
+    text-decoration: none;
+    
+    color: rgb(20, 177, 98);
+}
+a:hover{
+    color: rgb(138, 207, 204);
+}
+.contact-me{
+    padding: 30px;
+}
+/* You can also generate the button by CSS button generator on google */
+.btn{
+    text-decoration: none;
+    background-color: rgb(72, 192, 152);
+    padding:10px;
+    border-radius: 4px;
+    color: cornsilk;
+}
+
+hr{
+    width: 5%;
+    border: dotted #EAF6F6 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    size: 100px;
+}
+.copyright{
+    font-size: smaller;
+}
+
+/* navbar */
+
+.navBar ul{
+    overflow: auto;
+}
+.navBar li{
+    float: left;
+    margin: 10px 10px;
+}
+.navBar li a{
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(231, 240, 235);
+}
+.navBar li a:hover{
+    
+    color: rgb(38, 224, 184);
+}
+
