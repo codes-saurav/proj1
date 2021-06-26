@@ -1,5 +1,5 @@
 body{
-    margin: 0px; /*Doing this to remove the default space which comes*/
+    margin: 0px; 
     padding: 0px;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
@@ -7,16 +7,15 @@ body{
     
 }
 
-/* PEhle hamesha inspect karo, fri jaake check karo ki kaha problem aa rhi
-fir ape google chrome developer tools ka use karke game kardo, jo 
-bhi change kiya wo apni css file me bhi change kardo  */
+
 h1 {
     /* These things are done to remove the margin from the first div */
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     
     /* we are just overwriting the defaults of css  */
-    width: 50%; /*when we give width then the eleemt is centered within the 
+    width: 50%; 
+    /*when we give width then the eleemt is centered within the 
     width becUSE WE HAVE used the text-align center but if we want it
     in the center of the wntire wenpage then we'll have to give 
     margin auto*/
@@ -39,12 +38,7 @@ h1 {
     font-family: 'Sacramento', cursive;
     font-size: 90px;
     font-size: 7rem;
-    /* em is better than pixels because when we use pixe and 
-    someone has his fnt size: in the browser as large but still
-     the font size of our website will be the same we had in pixes
-     but if we use rem ->(root em) or em->(relative to parent) then it scales according
-     to the settings of the browser in which the website is opened */
-     /* rem is best to use */
+    
 }
 h2{
     font-family: 'Montserrat', sans-serif;
@@ -93,7 +87,6 @@ a:hover{
 .contact-me{
     padding: 30px;
 }
-/* You can also generate the button by CSS button generator on google */
 .btn{
     text-decoration: none;
     background-color: rgb(72, 192, 152);
@@ -116,7 +109,17 @@ hr{
 
 /* navbar */
 
-
+.chat{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(158, 233, 88);
+    width: 300px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
 span{
     padding: 20px;
     margin-top: 20px;
@@ -125,7 +128,10 @@ span{
     font-family: 'Open Sans', sans-serif;
     
 }
-
+.navBar{
+    position: sticky;
+    top: 0px;
+}
 .navBar span a{
     padding: 3px;
     text-decoration: none;
