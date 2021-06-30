@@ -6,7 +6,11 @@ body{
     font-family: 'Open Sans', sans-serif;
     
 }
-
+.saurav-img{
+    width: 200px; 
+    height: 200px; 
+    
+}
 
 h1 {
     /* These things are done to remove the margin from the first div */
