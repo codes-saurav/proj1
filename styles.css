@@ -58,6 +58,7 @@ h3{
     background-color: rgb(72, 192, 152);
     color: rgb(17, 78, 78);
     margin-top: 0px;
+    text-align: center;
 }
 
 .c1{
@@ -156,7 +157,32 @@ span{
         font-family: 'Open Sans', sans-serif;
         
     }
-    
+    .chat{
+        position: fixed;
+        box-sizing: border-box;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(158, 233, 88);
+    width: 150px;
+    height: 30px;
+    padding: 0px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    }
+    .chat img{
+        height: 10px;
+    }
+    .container p{
+        padding-right: 60px;
+    }
+    .h11{
+        padding-top: 80px;
+        font-family: 'Sacramento', cursive;
+        padding-right: 100px;
+        font-size: 6rem;
+        
+    }
     .navBar span a{
         padding: 3px;
         text-decoration: none;
@@ -166,4 +192,5 @@ span{
         
         color: rgb(214, 228, 226);
     }
+
 }
